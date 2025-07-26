@@ -1,9 +1,35 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@InProceedings{PointKAD_2025_WACV,
+    selected={true},
 
-@book{einstein1920relativity,
+    author    = {Sanjay S J* and Akash J* and Sreehari Rajan* and Dimple Shajahan and Charu Sharma},
+    title     = {Adversarial Learning based Knowledge Distillation on 3D Point Clouds},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    year      = {2025},
+    doi = {https://doi.org/10.1109/WACV61041.2025.00290},
+    abstract={The significant improvements in point cloud representation learning have increased its applicability in many real-life applications, resulting in the need for lightweight, better-performing models. One widely proposed efficient method is knowledge distillation, where a lightweight model uses knowledge from large models. Very few works exist on distilling the knowledge for point clouds. Most of the work focuses on cross-modal-based approaches that make the method expensive to train. This paper proposes PointKAD, an adversarial knowledge distillation framework for point cloud-based tasks. PointKAD includes adversarial feature distillation and response distillation with the help of discriminators to extract and distill the representation of feature maps and logits. We conduct extensive experimental studies on both synthetic (ModelNet40) and real (ScanObjectNN) datasets to show that PointKAD achieves state-of-the-art results compared to the existing knowledge distillation methods for point cloud classification. Additionally, we present results on the part segmentation task, highlighting the efficacy of the PointKAD framework. Our experiments further reveal that PointKAD is capable of transferring knowledge across different tasks and datasets, showcasing its versatility. Furthermore, we demonstrate that PointKAD can be applied to a cross-modal training setup, achieving competitive performance with cross-modal-based point cloud methods for classification.},
+
+}
+
+@article{KENDRE202355,
+    selected={true},
+    
+    title = {SketchCADGAN: A generative approach for completing partially drawn query sketches of engineering shapes to enhance retrieval system performance},
+    journal = {Computers \& Graphics},
+    volume = {115},
+    pages = {55-68},
+    year = {2023},
+    doi = {https://doi.org/10.1016/j.cag.2023.06.028},
+    author = {Prasad Pralhad Kendre and Kamalesh Kumar Kosalaraman and Sanjay Santhosh Kumar Jayasree and Sreehari Rajan and Akash Jayan and Ramanathan Muthuganapathy},
+    keywords = {Search and retrieval, Generative adversarial networks(GANs), Sketch completion, Sketch inpainting, CAD model sketches, Incomplete sketches},
+    abstract = {Retrieval systems are commonly used to find relevant data in large datasets. In engineering, these systems are useful for locating specific engineering shapes in a large dataset of engineering components. When end users want to search for a shape, they prefer a two-dimensional (2D) sketch over a three-dimensional (3D) object. However, users lacking domain knowledge may struggle to generate a complete query sketch and provide a partially completed sketch instead. Retrieving relevant information from partially drawn sketches is difficult because they may have missing edges, partially drawn circles, holes, ovals, etc. Most retrieval systems compare the similarity between the query and items in the database, so incomplete sketches may be ineffective in finding the relevant information. To address this problem with incomplete sketches, we propose a new generative adversarial network called SketchCADGAN. This network uses a two-stage cascaded architecture, with the first network attempting to predict a CAD model image from an incomplete sketch and the second network using the CAD model image to predict a completed sketch. Both networks are trained together adversarially. Our approach is proven more effective than other advanced techniques through qualitative and quantitative comparisons. Furthermore, we present the results of the retrieval system using both partially drawn and completed sketches, and demonstrate that incorporating completed sketches from the suggested cascaded GAN architecture results in improved retrieval performance.}
+}
+
+string{aps = {American Physical Society,}}
+
+book{einstein1920relativity,
   title={Relativity: the Special and General Theory},
   author={Einstein, Albert},
   year={1920},
@@ -11,7 +37,7 @@
   html={relativity.html}
 }
 
-@book{einstein1956investigations,
+book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
   author={Einstein, Albert},
@@ -20,20 +46,8 @@
   preview={brownian-motion.gif}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
 
-@article{PhysRev.47.777,
+article{PhysRev.47.777,
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
@@ -61,34 +75,7 @@
   inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+Article{einstein1905photoelectriceffect,
   bibtex_show={true},
   abbr={Ann. Phys.},
   title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
@@ -102,14 +89,4 @@
   doi={10.1002/andp.19053220607},
   award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
   award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
 }
